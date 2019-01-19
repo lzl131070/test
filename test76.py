@@ -15,7 +15,7 @@ def fn(s1='ADOBECODEBANC', s2='ABC'):
             for n in range(len(s2)):
                 if s2[n] in s1[i:j+1]:
                     m += 1
-            if m == 3 and len(s1[i:j+1]) < l:
+            if m == len(s2) and len(s1[i:j+1]) < l:
                 s = s1[i:j+1]
                 l = len(s1[i:j+1])
     return s,l
